@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Dennis Ungureanu</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-name">DENNIS UNGUREANU</a>
+            <div class="nav-links">
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="resume.html">RESUME</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h1 class="page-title">Projects</h1>
+            <p class="page-subtitle">Building skills through code, design, and real-world applications</p>
+        </section>
+
+        <section class="projects-section">
+            <h2 class="category-title">Engineering & Embedded Systems</h2>
+            <div class="projects-grid">
+                <div class="project-item" onclick="toggleModal('modal-led')">
+                    <div class="project-title-row">
+                        <h3>4-Bit LED Binary Counter</h3>
+                        <span class="project-date">Jan 2026</span>
+                    </div>
+                    <p>Built a binary counter using Arduino and LEDs on a breadboard that counts from 0-15, displaying each number in binary format using 4 LEDs.</p>
+                    <div class="project-meta">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Electronics</span>
+                        <span class="tag">Binary Logic</span>
+                        <span class="tag">Complete</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+
+                <div class="project-item" onclick="toggleModal('modal-tracking')">
+                    <div class="project-title-row">
+                        <h3>Personal Time Tracking System</h3>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <p>Developed a data pipeline to track personal productivity metrics, computer activity, and time allocation. Built MySQL database, automated data collection, and visualization system to find correlations between time usage and success metrics.</p>
+                    <div class="project-meta">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Data Pipeline</span>
+                        <span class="tag">MATLAB</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">Complete</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+
+                <div class="project-item future" onclick="toggleModal('modal-arduino-web')">
+                    <div class="project-title-row">
+                        <h3>Arduino Web Interface</h3>
+                        <span class="project-date">Planned</span>
+                    </div>
+                    <p>Planning to build a web-based control panel for Arduino/ESP32 boards. The goal is to control hardware components through a browser interface, combining my web development skills with embedded systems programming.</p>
+                    <div class="project-meta">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Planned</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+
+                <div class="project-item future" onclick="toggleModal('modal-cad')">
+                    <div class="project-title-row">
+                        <h3>CAD Design Portfolio</h3>
+                        <span class="project-date">In Progress</span>
+                    </div>
+                    <p>As I progress through mechanical engineering coursework, I'll be documenting CAD projects, design challenges, and engineering analyses here. This will include both academic work and personal design experiments.</p>
+                    <div class="project-meta">
+                        <span class="tag">CAD</span>
+                        <span class="tag">Mechanical Design</span>
+                        <span class="tag">In Progress</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2 class="category-title">Data & Automation</h2>
+            <div class="projects-grid">
+                <div class="project-item" onclick="toggleModal('modal-insta')">
+                    <div class="project-title-row">
+                        <h3>Instagram Media Archiver</h3>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <p>Attempted to build an automated system to archive saved Instagram videos to a personal server. Successfully implemented the scraping logic before Instagram's rate limiting flagged the activity.</p>
+                    <div class="project-meta">
+                        <span class="tag">Python</span>
+                        <span class="tag">Web Scraping</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Experimental</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2 class="category-title">Web Development</h2>
+            <div class="projects-grid">
+                <div class="project-item" onclick="toggleModal('modal-portfolio')">
+                    <div class="project-title-row">
+                        <h3>Portfolio Website</h3>
+                        <span class="project-date">2023 - Present</span>
+                    </div>
+                    <p>Designed and built this portfolio from scratch to showcase my work and document my learning journey. Focus on clean design, responsive layouts, and clear communication. Continuously updated as I develop new skills and complete new projects.</p>
+                    <div class="project-meta">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Ongoing</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+
+                <div class="project-item" onclick="toggleModal('modal-newsletter')">
+                    <div class="project-title-row">
+                        <h3>Newsletter Platform</h3>
+                        <span class="project-date">2023</span>
+                    </div>
+                    <p>Built a full-stack web application for newsletter subscriptions with user authentication and data validation. Implemented database storage for user information and learned backend security practices to prevent basic vulnerabilities.</p>
+                    <div class="project-meta">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Complete</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+
+                <div class="project-item" onclick="toggleModal('modal-discord')">
+                    <div class="project-title-row">
+                        <h3>Discord Bot</h3>
+                        <span class="project-date">2023 - Present</span>
+                    </div>
+                    <p>Created a Discord bot with moderation features and basic game functionality. Learned how to work with APIs, handle asynchronous operations, and manage bot permissions and user interactions in a live environment.</p>
+                    <div class="project-meta">
+                        <span class="tag">Python</span>
+                        <span class="tag">Discord API</span>
+                        <span class="tag">Ongoing</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2 class="category-title">Content & Community</h2>
+            <div class="projects-grid">
+                <div class="project-item" onclick="toggleModal('modal-youtube')">
+                    <div class="project-title-row">
+                        <h3>YouTube Channel</h3>
+                        <span class="project-date">2023</span>
+                    </div>
+                    <p>Created a channel focused on technology, philosophy, and self-improvement. While not currently active, this project taught me video editing, content creation, and how to communicate complex ideas clearly.</p>
+                    <div class="project-meta">
+                        <span class="tag">Content Creation</span>
+                        <span class="tag">9 Subscribers</span>
+                        <span class="tag">Paused</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+
+                <div class="project-item" onclick="toggleModal('modal-discord-server')">
+                    <div class="project-title-row">
+                        <h3>Discord Community</h3>
+                        <span class="project-date">2023 - Present</span>
+                    </div>
+                    <p>Built and manage a small Discord server for discussions around tech, self-improvement, and personal projects. Learning community management and how to create spaces for meaningful conversations.</p>
+                    <div class="project-meta">
+                        <span class="tag">Community Building</span>
+                        <span class="tag">13 Members</span>
+                        <span class="tag">Active</span>
+                    </div>
+                    <p class="click-hint">Click to see details →</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="update-note">
+            <p><em>This page is updated monthly as I complete new projects and develop new skills. Check back regularly to see what I'm working on.</em></p>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="modal-led" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-led')">&times;</span>
+            <h2>4-Bit LED Binary Counter</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Add breadboard/LED setup photo]
+            </div>
+            <div class="modal-details">
+                <h3>What I Built</h3>
+                <p>Created a simple but fundamental embedded systems project using an Arduino to control 4 LEDs that display numbers 0-15 in binary format. The counter increments automatically, showing how digital systems represent numbers at the hardware level.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>Binary number systems</strong> - How computers represent data using only 1s and 0s</li>
+                    <li><strong>Arduino programming</strong> - digitalWrite(), delay(), loop structures, and pin configuration</li>
+                    <li><strong>Circuit design</strong> - Breadboard layout, LED current limiting with resistors, proper grounding</li>
+                    <li><strong>Embedded systems thinking</strong> - How software controls physical hardware in real-time</li>
+                    <li><strong>Bitwise operations</strong> - Converting decimal numbers to binary representation programmatically</li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <p>Used 4 digital output pins, implemented bit shifting to extract individual binary digits, and created a visual representation of how data is stored in computer memory. This project bridges the gap between abstract programming concepts and tangible hardware results.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-tracking" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-tracking')">&times;</span>
+            <h2>Personal Time Tracking System</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Add screenshot of data visualization or database schema]
+            </div>
+            <div class="modal-details">
+                <h3>What I Built</h3>
+                <p>Designed and implemented a complete data pipeline to track how I spend my time and correlate it with productivity outcomes. Set up a MySQL server, integrated third-party activity monitoring software, automated data collection, and built visualizations to identify patterns in my daily habits.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>Database design</strong> - Created normalized MySQL schemas to store time-series data efficiently</li>
+                    <li><strong>Data pipeline architecture</strong> - Automated data collection from multiple sources into a central database</li>
+                    <li><strong>SQL queries</strong> - Wrote complex queries to aggregate and analyze time usage patterns</li>
+                    <li><strong>Data visualization</strong> - Used MATLAB to create meaningful charts showing correlations and trends</li>
+                    <li><strong>API integration</strong> - Connected third-party tracking software to my database</li>
+                    <li><strong>Systems thinking</strong> - How to measure and optimize personal productivity scientifically</li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <p>Built the entire stack from scratch - MySQL database running locally, Python scripts for data ingestion, integration with activity tracking tools, and MATLAB for statistical analysis. The goal was to find quantifiable relationships between time allocation and achievement of goals. While I didn't collect enough data long-term, the system worked as designed and taught me how data engineering projects are structured end-to-end.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-insta" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-insta')">&times;</span>
+            <h2>Instagram Media Archiver</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Add code snippet or diagram of scraping logic]
+            </div>
+            <div class="modal-details">
+                <h3>What I Built</h3>
+                <p>Developed a Python script to automatically download and archive saved Instagram videos to a personal server. The goal was to create a permanent backup of content that might otherwise disappear when posts are deleted.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>Web scraping</strong> - How to programmatically extract data from websites</li>
+                    <li><strong>API reverse engineering</strong> - Understanding how Instagram's internal APIs work</li>
+                    <li><strong>Rate limiting</strong> - Why platforms implement request throttling and how to detect it</li>
+                    <li><strong>HTTP requests</strong> - Authentication, session management, and request headers</li>
+                    <li><strong>File system operations</strong> - Downloading, storing, and organizing media files programmatically</li>
+                    <li><strong>Ethical considerations</strong> - The line between personal data backup and ToS violations</li>
+                </ul>
+
+                <h3>Outcome & Reflection</h3>
+                <p>While Instagram flagged the automated activity before I could complete the full archive, the technical implementation worked as intended. This taught me about the challenges of working with third-party platforms, the importance of respecting rate limits, and how companies protect their data. The project demonstrated I can build working solutions to real problems, even if external constraints prevent full deployment.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-arduino-web" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-arduino-web')">&times;</span>
+            <h2>Arduino Web Interface</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Future project concept sketch]
+            </div>
+            <div class="modal-details">
+                <h3>Project Goals</h3>
+                <p>Build a web-based control panel that allows real-time control of Arduino/ESP32 hardware through a browser interface. This combines my web development experience with embedded systems programming.</p>
+
+                <h3>Learning Objectives</h3>
+                <ul>
+                    <li><strong>Embedded systems programming</strong> - Writing efficient code for microcontrollers</li>
+                    <li><strong>Serial communication</strong> - How devices communicate with computers</li>
+                    <li><strong>Real-time data transmission</strong> - WebSockets for bidirectional communication</li>
+                    <li><strong>Hardware-software integration</strong> - Bridging the gap between physical and digital</li>
+                    <li><strong>IoT architecture</strong> - Designing systems where hardware and web interfaces work together</li>
+                </ul>
+
+                <h3>Planned Implementation</h3>
+                <p>Use ESP32 for WiFi connectivity, build a web server on the microcontroller, create a responsive web interface with JavaScript, and enable real-time control of LEDs, motors, sensors, and other components through the browser.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cad" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-cad')">&times;</span>
+            <h2>CAD Design Portfolio</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - CAD renderings will be added as coursework progresses]
+            </div>
+            <div class="modal-details">
+                <h3>Project Scope</h3>
+                <p>As I progress through mechanical engineering coursework, I'm building a collection of CAD projects, design challenges, and engineering analyses. This includes both academic assignments and personal design experiments.</p>
+
+                <h3>Learning Focus</h3>
+                <ul>
+                    <li><strong>3D modeling</strong> - Creating accurate digital representations of physical parts</li>
+                    <li><strong>Technical drawings</strong> - Communicating designs through engineering documentation</li>
+                    <li><strong>Design for manufacturing</strong> - Creating parts that can actually be produced</li>
+                    <li><strong>Structural analysis</strong> - Using FEA to predict how designs perform under load</li>
+                    <li><strong>Material selection</strong> - Choosing appropriate materials for specific applications</li>
+                    <li><strong>Assembly design</strong> - How individual parts fit together into complete systems</li>
+                </ul>
+
+                <h3>Future Updates</h3>
+                <p>This section will be regularly updated with completed projects, design iterations, and lessons learned throughout my mechanical engineering education. Check back for CAD renderings, technical drawings, and project documentation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-portfolio" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-portfolio')">&times;</span>
+            <h2>Portfolio Website</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Screenshot of portfolio design]
+            </div>
+            <div class="modal-details">
+                <h3>What I Built</h3>
+                <p>Designed and coded this entire portfolio website from scratch without using templates or website builders. Built to be clean, professional, and fully responsive across all devices.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>Web design principles</strong> - Typography, spacing, color theory, and visual hierarchy</li>
+                    <li><strong>Responsive layouts</strong> - CSS Grid, Flexbox, and media queries for mobile/desktop</li>
+                    <li><strong>User experience</strong> - How to organize information so it's easy to navigate and understand</li>
+                    <li><strong>Semantic HTML</strong> - Structuring content properly for accessibility and SEO</li>
+                    <li><strong>CSS best practices</strong> - Maintainable styles, efficient selectors, smooth animations</li>
+                    <li><strong>Professional communication</strong> - How to present technical work to non-technical audiences</li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <p>Built with pure HTML/CSS (no frameworks), designed mobile-first, implemented smooth transitions and hover effects, and structured code for easy maintenance and updates. The minimalist design keeps focus on content while remaining modern and professional.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-newsletter" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-newsletter')">&times;</span>
+            <h2>Newsletter Platform</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Screenshot of newsletter interface]
+            </div>
+            <div class="modal-details">
+                <h3>What I Built</h3>
+                <p>Full-stack web application for newsletter subscriptions with user registration, email validation, and secure database storage. Built the entire backend from scratch to understand how web applications work under the hood.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>Backend development</strong> - Server-side logic with Python and Flask framework</li>
+                    <li><strong>Database design</strong> - SQLite schema design, queries, and data relationships</li>
+                    <li><strong>Form validation</strong> - Client-side and server-side input validation</li>
+                    <li><strong>User authentication</strong> - Password hashing, session management, security best practices</li>
+                    <li><strong>SQL injection prevention</strong> - Parameterized queries and input sanitization</li>
+                    <li><strong>MVC architecture</strong> - Separating data, logic, and presentation layers</li>
+                </ul>
+
+                <h3>Technical Implementation</h3>
+                <p>Used Flask for routing and templates, SQLite for data persistence, implemented CSRF protection, validated email formats, and built a clean admin interface for managing subscribers. This project taught me how to think about security, data privacy, and building production-ready applications.</p>
+
+                <p><a href="https://github.com/Clancastle/web-newsletter-expand-x" target="_blank">View on GitHub →</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-discord" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-discord')">&times;</span>
+            <h2>Discord Bot</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Bot interface or command examples]
+            </div>
+            <div class="modal-details">
+                <h3>What I Built</h3>
+                <p>Discord bot with server moderation features, interactive games, and automated tasks. Currently running on my Discord server with plans to add more functionality.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>API integration</strong> - Working with Discord's API and understanding OAuth</li>
+                    <li><strong>Asynchronous programming</strong> - Handling multiple events and commands concurrently</li>
+                    <li><strong>Event-driven architecture</strong> - Responding to user actions in real-time</li>
+                    <li><strong>Bot permissions</strong> - Understanding role hierarchies and access control</li>
+                    <li><strong>Command handling</strong> - Parsing user input and executing appropriate functions</li>
+                    <li><strong>State management</strong> - Tracking game state and user data across sessions</li>
+                </ul>
+
+                <h3>Features & Future Plans</h3>
+                <p>Current features include basic moderation commands, simple games, and automated responses. Planning to add more complex game logic, database integration for persistent data, and custom server management features.</p>
+
+                <p><a href="https://discord.com/api/oauth2/authorize?client_id=1125558521518379178&permissions=1634235578440&scope=applications.commands%20bot" target="_blank">Add to Server →</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-youtube" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-youtube')">&times;</span>
+            <h2>YouTube Channel</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Channel banner or video thumbnail]
+            </div>
+            <div class="modal-details">
+                <h3>What I Created</h3>
+                <p>YouTube channel focused on technology, philosophy, and self-improvement. While not currently active, this project taught me content creation and communication skills.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>Video editing</strong> - Cutting, transitions, audio mixing, and visual effects</li>
+                    <li><strong>Content scripting</strong> - Structuring ideas into coherent narratives</li>
+                    <li><strong>Public communication</strong> - Explaining complex topics in accessible ways</li>
+                    <li><strong>Thumbnail design</strong> - Creating visually appealing graphics that attract viewers</li>
+                    <li><strong>Consistency & discipline</strong> - Managing a content schedule and following through</li>
+                </ul>
+
+                <h3>Reflection</h3>
+                <p>Creating video content taught me how to communicate technical concepts clearly and engage an audience. While I've paused uploads to focus on engineering school, the skills I developed in researching, scripting, and presenting information are valuable across all fields.</p>
+
+                <p><a href="https://www.youtube.com/channel/UC2bS1DFy-NOigAl0MPCQ32Q" target="_blank">Visit Channel →</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-discord-server" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="toggleModal('modal-discord-server')">&times;</span>
+            <h2>Discord Community</h2>
+            <div class="modal-image-placeholder">
+                [Image placeholder - Server icon or screenshot]
+            </div>
+            <div class="modal-details">
+                <h3>What I Built</h3>
+                <p>Created and manage a Discord server for discussions around technology, self-improvement, and personal projects. A space for like-minded people to share ideas and support each other's growth.</p>
+
+                <h3>What I Learned</h3>
+                <ul>
+                    <li><strong>Community management</strong> - Creating and enforcing guidelines for healthy discussions</li>
+                    <li><strong>Server structure</strong> - Organizing channels and roles for optimal user experience</li>
+                    <li><strong>Conflict resolution</strong> - Handling disagreements and maintaining positive atmosphere</li>
+                    <li><strong>Engagement strategies</strong> - Creating events and topics that keep members active</li>
+                    <li><strong>Leadership</strong> - Taking responsibility for the culture and direction of a community</li>
+                </ul>
+
+                <h3>Current Status</h3>
+                <p>Actively maintaining the server with 13 members. Always open to new people who want to discuss tech, share projects, or just connect with others on similar journeys.</p>
+
+                <p><a href="https://discord.gg/gZHa5e43W" target="_blank">Join Server →</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://github.com/Clancastle" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/dennis-ungureanu-883a35160/" target="_blank">LinkedIn</a>
+            <a href="https://discord.gg/gZHa5e43W" target="_blank">Discord</a>
+            <a href="mailto:dennisungureanu0@gmail.com">Email</a>
+        </div>
+        <p class="footer-text">Dennis Ungureanu</p>
+    </footer>
+
+    <script>
+        function toggleModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal.style.display === 'flex') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            } else {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    modal.style.display = 'none';
+                });
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
